@@ -76,13 +76,6 @@ const App: React.FC = () => {
     }
   }
 
-  // поменять местами валюты
-  function flip() {
-    const temp = from;
-    setFrom(to);
-    setTo(temp);
-  }
-
   return (
     info && (
       <div className="App">
@@ -116,14 +109,7 @@ const App: React.FC = () => {
               placeholder="From"
             />
           </div>
-          <div className="switch">
-            <HiSwitchHorizontal
-              size="30px"
-              onClick={() => {
-                flip();
-              }}
-            />
-          </div>
+
           <div className="right">
             <h3>Обмен на</h3>
             <Dropdown

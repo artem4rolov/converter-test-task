@@ -34,14 +34,6 @@ input {
   width: 120px;
 }
 
-.switch {
-  padding: 5px;
-  margin-top: 25px;
-  background-color: rgb(226, 252, 184);
-  border-radius: 50%;
-  cursor: pointer;
-}
-
 .result {
   box-sizing: border-box;
   width: 800px;
