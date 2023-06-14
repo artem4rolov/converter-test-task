@@ -27,6 +27,13 @@ input {
   padding-left: 5px;
   font-size: 20px;
   height: 36px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+.Dropdown-control {
+  border-radius: 10px;
 }
 
 .middle,
@@ -40,16 +47,6 @@ input {
   padding-left: 30px;
 }
 
-button {
-  width: 100px;
-  height: 30px;
-  font-weight: bold;
-  font-size: 20px;
-  border: 2px solid forestgreen;
-  background-color: rgb(226, 252, 184);
-  cursor: pointer;
-}
-
 p,
 h3,
 button,
@@ -59,4 +56,45 @@ button,
 
 p {
   font-size: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .heading {
+    font-size: 20px;
+  }
+
+  .container {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .result {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .heading {
+    font-size: 16px;
+  }
+
+  .container {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .result {
+    text-align: center;
+  }
 }
