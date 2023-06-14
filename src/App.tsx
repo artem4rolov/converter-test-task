@@ -91,7 +91,7 @@ const App: React.FC = () => {
                   convert((e.target as HTMLInputElement).value);
                 }
               }}
-              type="text"
+              type="number"
               placeholder="Введите количество"
               onChange={(e) => setInput(e.target.value)}
               value={input}
